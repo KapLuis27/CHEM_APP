@@ -26,11 +26,7 @@ SECRET_KEY = 'django-insecure-63yi^u=9kxvc&r)cu&(as3woz7w%r!ljn$677rideo#zi3cq1r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    "chem-app.onrender.com",  # Replace with your Render domain
-    "127.0.0.1",
-    "localhost",
-]
+ALLOWED_HOSTS = ['PFCS_members.onrender.com']
 
 AUTH_USER_MODEL = 'members.Member'
 
@@ -55,7 +51,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'chem_society.urls'
@@ -129,13 +124,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
-# Ensure STATICFILES_DIRS includes your app's static folder
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "members/static"),
+    os.path.join(BASE_DIR, 'members/static')
 ]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
