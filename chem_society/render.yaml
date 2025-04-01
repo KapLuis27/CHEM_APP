@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: chem-society-web
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn chem_society.wsgi"
-    pythonVersion: "3.10"
-    autoDeploy: true
