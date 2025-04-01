@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-63yi^u=9kxvc&r)cu&(as3woz7w%r!ljn$677rideo#zi3cq1r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['PFCS_members.onrender.com']
+ALLOWED_HOSTS = ['Luisito.pythonanywhere.com']
 
 AUTH_USER_MODEL = 'members.Member'
 
