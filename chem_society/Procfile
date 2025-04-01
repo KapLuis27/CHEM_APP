@@ -1,0 +1,1 @@
+web: gunicorn chem_society.wsgi
